@@ -1,0 +1,227 @@
+body#page-top data-spy="scroll" data-target=".navbar-fixed-top" 
+  	/! Navigation
+  	= render partial: "components/navbar"
+  	/! Intro Section
+    = render partial: "components/intro"
+    /! About Section
+    = render partial: "components/about"
+
+    section#portfolio.container.content-section.text-center
+    	.container
+        .row
+          	.col-lg-8.col-lg-offset-2
+            	h2 OUR WORKS
+          	.row
+	            .col-md-4.col-sm-6.portfolio-item
+	              	a.portfolio-link data-toggle="modal" href="#portfolioModal2"
+  		            	.portfolio-hover
+  		            		.portfolio-hover-content
+  		            	= image_tag "portfolio/johanku.jpg", class: "img img-responsive img-centered"
+	              	.portfolio-caption
+	                	h4 【 THE THING 】
+	                	p.text-muted 古又文時裝秀
+	            .col-md-4.col-sm-6.portfolio-item
+	              	a.portfolio-link data-toggle="modal" href="#portfolioModal1" 
+		              	.portfolio-hover
+		                	.portfolio-hover-content
+		              	= image_tag "portfolio/vproject.jpg", class: "img img-responsive img-centered"
+	              	.portfolio-caption
+	                	h4 LoveLive!！僕たちはひとつの光
+	                	p.text-muted V-Project LL 同人創作合作案
+	            .col-md-4.col-sm-6.portfolio-item
+	              	a.portfolio-link data-toggle="modal" href="#portfolioModal5" 
+		              	.portfolio-hover
+		                	.portfolio-hover-content
+		              	= image_tag "portfolio/talk2taiwan.jpg", class: "img img-responsive img-centered"
+	              	.portfolio-caption
+	                	h4 政問
+	                	p.text-muted 台灣新型態政論節目
+	            .col-md-4.col-sm-6.portfolio-item
+	              	a.portfolio-link data-toggle="modal" href="#portfolioModal4" 
+	              		.portfolio-hover
+	                		.portfolio-hover-content
+	              		= image_tag "portfolio/followme.jpg", class: "img img-responsive img-centered"
+	              	.portfolio-caption
+		                h4 時刻旅行 TripMoment
+		                p.text-muted 跟我走♥系列
+	            .col-md-4.col-sm-6.portfolio-item
+	              	a.portfolio-link data-toggle="modal" href="#portfolioModal3" 
+	              		.portfolio-hover
+	                		.portfolio-hover-content
+	              		= image_tag "portfolio/plante.jpg", class: "img img-responsive img-centered"
+              		.portfolio-caption
+                		h4 時刻旅行 TripMoment
+                		p.text-muted 小星球系列
+    /! Download Section
+    = render partial: "components/download"
+    /! Contact Section
+    = render partial: "components/contact"
+    /! Map Section
+    = render partial: "components/map"
+    /! Footer
+    = render partial: "components/footer"
+    /! Portfolio Modals
+    #portfolioModal2.portfolio-modal.modal.fade aria-hidden="true" role="dialog" tabindex="-1" 
+      	.modal-content
+	        .close-modal data-dismiss="modal" 
+	          .lr
+	            .rl
+	        .container
+	          .row
+		          .col-lg-8.col-lg-offset-2
+		            .modal-body
+	                h2 style=("color: #333")  【 THE THING 】
+	                = image_tag "portfolio/johanku.jpg", class: "img img-responsive img-centered"
+	                p.cn style=("color: #333") 
+	                  | Johan Ku Gold Label
+	                  br>/
+	                  | 2016-17 A/W Collection
+	                  br>/
+	                  | 【 THE THING 】
+	                ul.list-inline.item-details
+	                  li
+	                    | 客戶 / Client:
+	                    strong
+	                      a href="http://www.johanku.com/" target="_blank"  Johan Ku Gold Label
+	                  li
+	                    | 時間 / Date:
+	                    strong
+	                      a href="#"  March 30
+	                  li
+	                    | 類型 / Type:
+	                    strong
+	                      a href="#"  show
+	                button.btn.btn-default data-dismiss="modal" type="button" 
+	                  i.fa.fa-times
+	                  | Close
+
+    #portfolioModal1.portfolio-modal.modal.fade aria-hidden="true" role="dialog" tabindex="-1" 
+      .modal-content
+        .close-modal data-dismiss="modal" 
+          .lr
+            .rl
+        .container
+          .row
+            .col-lg-8.col-lg-offset-2
+              .modal-body
+                h2 style=("color: #333")  LoveLive!！僕たちはひとつの光
+                = image_tag "portfolio/vproject.jpg", class: "img img-responsive img-centered"
+                p.cn style=("color: #333") 
+                  | 由阿狗、Mr.Sugar邀約V-Project合作
+                  br>/
+                  | VRMoment贊助器材與場地
+                ul.list-inline.item-details
+                  li
+                    | 客戶 / Client:
+                    strong
+                      a href="https://www.facebook.com/vproject.page" target="_blank"  V-Project
+                  li
+                    | 時間 / Date:
+                    strong
+                      a href="#"  March 28
+                  li
+                    | 類型 / Type:
+                    strong
+                      a href="#" 
+                button.btn.btn-default data-dismiss="modal" type="button" 
+                  i.fa.fa-times
+                  | Close
+
+    #portfolioModal5.portfolio-modal.modal.fade aria-hidden="true" role="dialog" tabindex="-1" 
+      .modal-content
+        .close-modal data-dismiss="modal" 
+          .lr
+            .rl
+        .container
+          .row
+            .col-lg-8.col-lg-offset-2
+              .modal-body
+                h2 style=("color: #333")  政問
+                = image_tag "portfolio/talk2taiwan.jpg", class: "img img-responsive img-centered"
+                p.cn style=("color: #333") 
+                  | 《政問 - Talk to Taiwan》是新型態的政論節目。
+                  br>/
+                  | 由14間跨領域公司與新生代意見領袖，嚴選台灣未來十年的重要議題，
+                  br>/
+                  | 邀集關鍵大咖：真誠請教，真誠實錄，為台灣書寫下一個十年的政策備忘錄。
+                ul.list-inline.item-details
+                  li
+                    | 客戶 / Client:
+                    strong
+                      a href="http://talkto.tw/" target="_blank"  政問
+                  li
+                    | 時間 / Date:
+                    strong
+                      a href="#"  Dec 30
+                  li
+                    | 類型 / Type:
+                    strong
+                      a href="#" 
+                button.btn.btn-default data-dismiss="modal" type="button" 
+                  i.fa.fa-times
+                  | Close
+
+    #portfolioModal4.portfolio-modal.modal.fade aria-hidden="true" role="dialog" tabindex="-1" 
+      .modal-content
+        .close-modal data-dismiss="modal" 
+          .lr
+            .rl
+        .container
+          .row
+            .col-lg-8.col-lg-offset-2
+              .modal-body
+                h2 style=("color: #333")  時刻旅行 TripMoment
+                = image_tag "portfolio/followme.jpg", class: "img img-responsive img-centered"
+                p.cn style=("color: #333") 
+                  | 從現在開始，「跟我走♥」
+                  br>/
+                  | 踩過台灣北部著名的大街小巷、觀光景點
+                  br>/
+                  | 讓我們帶著你們，手牽著手，跨過街頭巷尾
+                  br>/
+                  | 踏看一地風情。
+                ul.list-inline.item-details
+                  li
+                    | 客戶 / Client:
+                    strong
+                      a href="http://tripmoment.com/" target="_blank"  時刻旅行 TripMoment
+                  li
+                    | 時間 / Date:
+                    strong
+                      a href="#"  Nov 25
+                  li
+                    | 類型 / Type:
+                    strong
+                      a href="#" 
+                button.btn.btn-default data-dismiss="modal" type="button" 
+                  i.fa.fa-times
+                  | Close
+
+    #portfolioModal3.portfolio-modal.modal.fade aria-hidden="true" role="dialog" tabindex="-1" 
+      	.modal-content
+	        .close-modal data-dismiss="modal" 
+	          	.lr
+	            	.rl
+	        .container
+	          	.row
+	            .col-lg-8.col-lg-offset-2
+	              .modal-body
+	                h2 style=("color: #333")  時刻旅行 TripMoment
+	                = image_tag "portfolio/plante.jpg", class: "img img-responsive img-centered"
+	                p.cn style=("color: #333")  只要一點視角的不同，生活中習以為常的風景，也會耳目一新
+	                ul.list-inline.item-details
+	                  li
+	                    | 客戶 / Client:
+	                    strong
+	                      a href="http://tripmoment.com/" target="_blank"  時刻旅行 TripMoment
+	                  li
+	                    | 時間 / Date:
+	                    strong
+	                      a href="#"  Oct 30
+	                  li
+	                    | 類型 / Type:
+	                    strong
+	                      a href="#" 
+	                button.btn.btn-default data-dismiss="modal" type="button" 
+	                  i.fa.fa-times
+	                  | Close

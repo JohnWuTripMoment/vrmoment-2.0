@@ -1,0 +1,22 @@
+doctype 5
+html
+  head
+    meta charset="utf-8" /
+    meta content="IE=edge" http-equiv="X-UA-Compatible" 
+    title VRMoment
+    meta content="width=device-width" name="viewport" 
+    meta content=("your magic moment in virtual reality.") name="description" 
+    link href="https://vrmoment.net/" rel="canonical" 
+
+    / assets
+    link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" 
+    link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" 
+
+    /! Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/
+    script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA" type="text/javascript" 
+
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+  body
+    == yield

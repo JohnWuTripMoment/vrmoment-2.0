@@ -1,0 +1,27 @@
+default: &default
+  endpoint: 'https://acme-v01.api.letsencrypt.org/'
+  email: 'johnwu@tripmoment.com'
+  domain: novelreality.co
+
+  # in Rails.root, path to private key
+  private_key: 'lib/letsencrypt_plugin/key/keyfile.pem'
+
+  # in Rails.root, path where certificates
+  # will be stored (on Heroku this variable is ignored)
+  output_cert_dir: 'lib/letsencrypt_plugin/certificates'
+
+  # in Rails.root, path where challenge token
+  # will be stored in case when DB will not be used
+  challenge_dir_name: 'lib/letsencrypt_plugin/challenge'
+
+production:
+  <<: *default
+
+development:
+  <<: *default
+
+test:
+  <<: *default
+
+staging:
+  <<: *default
