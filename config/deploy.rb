@@ -1,8 +1,8 @@
 # config valid only for current version of Capistrano
 lock '3.4.0'
 
-set :application, 'vrmoment'
-set :repo_url, 'git@github.com:JohnWuTripMoment/vrmoment.git'
+set :application, 'vrmoment-2.0'
+set :repo_url, 'git@github.com:JohnWuTripMoment/vrmoment-2.0.git'
 
 # Default branch is :master
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }.call
@@ -13,6 +13,7 @@ set :repo_url, 'git@github.com:JohnWuTripMoment/vrmoment.git'
 # Default value for :scm is :git
 set :scm, :git
 
+# permission for /home/apps/tmp
 set :tmp_dir, "/home/apps/tmp"
 
 # set :rvm_type, :ubuntu
@@ -29,7 +30,7 @@ set :rvm_custom_path, '/home/ubuntu/.rvm'  # only needed if not detected
 
 # Default value for :linked_files is []
 # set :linked_files, fetch(:linked_files, []).push('config/database.yml', 'config/application.yml')
-set :linked_files, fetch(:linked_files, []).push('config/database.yml', 'config/secrets.yml')
+set :linked_files, fetch(:linked_files, []).push('config/database.yml')
 
 # Default value for linked_dirs is []
 set :linked_dirs, fetch(:linked_dirs, []).push('bin', 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system')

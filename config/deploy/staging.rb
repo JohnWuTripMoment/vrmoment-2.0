@@ -1,4 +1,4 @@
-set :deploy_to, '/home/apps/vrmoment'
+set :deploy_to, '/home/apps/vrmoment-2.0'
 set :rails_env, 'staging'
 set :branch, 'master'
 # Simple Role Syntax
@@ -7,9 +7,9 @@ set :branch, 'master'
 # is considered to be the first unless any hosts have the primary
 # property set.  Don't declare `role :all`, it's a meta role.
 
-role :app, %w{apps@52.196.51.56}
-role :web, %w{apps@52.196.51.56}
-role :db, %w{apps@52.196.51.56}
+role :app, %w{apps@}
+role :web, %w{apps@}
+role :db, %w{apps@}
 
 # server-based syntax
 # ======================
