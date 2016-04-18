@@ -45,6 +45,9 @@ set :keep_releases, 5
 # enable for passenger restart
 set :passenger_restart_with_touch, true
 
+# whenever
+set :whenever_identifier, ->{ "#{fetch(:application)}_#{fetch(:stage)}" }
+
 namespace :deploy do
 
   # desc 'Restart application'

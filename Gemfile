@@ -20,6 +20,9 @@ gem 'letsencrypt_plugin'
 # SEO
 gem 'meta-tags'
 
+# Ruby cron jobs
+gem 'whenever', :require => false
+
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development do
