@@ -373,7 +373,7 @@ body {
 
 /* 聯絡我們 */
 section#contact .form-control:focus {
-    border-color: #;
+    /*border-color: #;*/
     box-shadow: none;
 }
 

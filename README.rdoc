@@ -1,1 +1,25 @@
 VR Moment v2
+
+執行migrate
+======================
+- rake db:migrate
+
+
+安裝gem 並且啟動 rails server
+==========================
+
+- bundle install
+- rails server (掛著， ctrl+c 可以停止)
+
+Deploy
+=================
+
+- staging : bundle exec cap staging deploy
+
+佈署特定分支到 staging :
+=================
+	1. 先 push 該分支到 github 上
+	2. 打開 config/deploy/staging.rb
+	3. 修改第三行的 `set :branch, 'develop'` 把 develop 換成你要的分支，然後 save，不要 commit
+	4. 執行 `bundle exec cap staging deploy`
+	5. 佈署完成後再把 staging.rb 還原到修改前的狀態就可以了
