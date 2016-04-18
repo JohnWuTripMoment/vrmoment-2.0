@@ -144,7 +144,10 @@ a:focus {
     text-align: center;
     color: #fff;
     /* 背景圖必須用以下寫法 */
+    /*background: image-url("intro-bg.jpg") no-repeat bottom center scroll;*/
+    /*background: asset_url('background-image.png');*/
     background: url(intro-bg.jpg) no-repeat bottom center scroll;
+    /*background: url(intro-bg.jpg) no-repeat bottom center scroll;*/
     background-color: #000000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
