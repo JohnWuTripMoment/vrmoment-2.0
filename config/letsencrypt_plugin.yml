@@ -1,7 +1,7 @@
 default: &default
   endpoint: 'https://acme-v01.api.letsencrypt.org/'
   email: 'johnwu@tripmoment.com'
-  domain: vrtest.tk
+  domain: vrfirst.tk
 
   # in Rails.root, path to private key
   private_key: 'lib/letsencrypt_plugin/key/keyfile.pem'
