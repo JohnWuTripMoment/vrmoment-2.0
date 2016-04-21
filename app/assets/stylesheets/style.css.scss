@@ -144,8 +144,6 @@ a:focus {
     text-align: center;
     color: #fff;
     /* 背景圖必須用以下寫法 */
-     /*background: url(intro-bg.jpg) no-repeat bottom center scroll;*/
-    // background: url(<%= asset_path 'intro-bg.jpg' %>) no-repeat bottom center scroll;
     background: image-url("intro-bg.jpg") no-repeat bottom center scroll;
     background-color: #000000;
     -webkit-background-size: cover;
@@ -266,8 +264,8 @@ a:focus {
     width: 100%;
     padding: 50px 0;
     color: #fff;
+    /* 背景圖必須用以下寫法 */
     background: image-url("downloads-bg") no-repeat center center scroll;
-    // background: url(<%= asset_path 'downloads-bg.jpg' %>) no-repeat bottom center scroll;
     background-color: #000000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
